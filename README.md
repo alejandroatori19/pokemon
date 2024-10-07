@@ -1,2 +1,2 @@
 # pokemon
-Personal goal to create a videogame of pokemon
+Trying to create a code capable of handle the logic behind the pokemon game.
