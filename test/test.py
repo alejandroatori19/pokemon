@@ -85,6 +85,7 @@ def draw_interface():
     # Draw action buttons
     button_width, button_height = 150, 40
     actions = ["Battle", "Pokémon", "Bag", "Run"]
+    
     for i, action in enumerate(actions):
         pygame.draw.rect(screen, BLACK, (SCREEN_WIDTH - button_width - 20, 200 + i * (button_height + 10), button_width, button_height))
         draw_text(action, font, WHITE, screen, SCREEN_WIDTH - button_width - 10, 200 + i * (button_height + 10) + 5)  # Center text

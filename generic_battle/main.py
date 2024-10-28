@@ -1,6 +1,7 @@
 from constants import *
 from pokemon import Pokemon
 from movement import Movement
+from interface import Interface
 import time
 
 def create_movements(movements_dict):
@@ -69,7 +70,16 @@ def fill_pokemon_class():
 
 pokemon1 = fill_pokemon_class ()
 
-pokemon1.show_pokemon_information ()
+backgroundImagePath = r"C:\Users\Usuario\Desktop\pokemon\generic_battle\images\background.png"
+pokemon1Path = r"C:\Users\Usuario\Desktop\pokemon\generic_battle\images\arceus.png"
+pokemon2Path = r"C:\Users\Usuario\Desktop\pokemon\generic_battle\images\arceus.png"
+
+interface = Interface (800, 600)
+interface.init_graphic_interface_fully (backgroundImagePath, pokemon1Path, pokemon2Path)
+
+while True:
+    interface.update_graphic_interface ()
+
 
 
     
